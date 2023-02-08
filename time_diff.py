@@ -1,7 +1,6 @@
 import time
 from datetime import datetime
 from tkinter import messagebox
-from get_attendance import get_employee_end_time
 
 
 # Convert 12-Hour format to 24-Hour format
@@ -44,8 +43,8 @@ def get_minutes_late(schedule_in, time_in):
                                                 "calculated")
     except AttributeError:
         minutes_late = 480
-        messagebox.showinfo("Minutes Late", "Minutes Late Has reached 8 or more hours, Excess Minutes will not be "
-                                            "calculated")
+        # messagebox.showinfo("Minutes Late", "Minutes Late Has reached 8 or more hours, Excess Minutes will not be "
+        #                                     "calculated")
 
     return minutes_late
 
