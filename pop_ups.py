@@ -22,7 +22,7 @@ elif weekday_number == 7:
 
 def model_error_message():
     messagebox.showwarning('Trainer model', 'Trainer model is missing.\n'
-                            'Make sure that the employee faces are collected and trained')
+                                            'Make sure that the employee faces are collected and trained')
 
 
 def camera_error_message():
@@ -38,15 +38,33 @@ def employee_detected_error_message():
 
 
 def db_saved_message():
-    messagebox.showinfo('Info', 'Database server location saved, re-open the application for the changes to take effect')
+    messagebox.showinfo('Info',
+                        'Database server location saved, re-open the application for the changes to take effect')
 
 
-def employee_no_schedule_warning():
-    messagebox.showwarning('Warning', 'Employee has no schedule yet')
+# def employee_no_schedule_warning():
+#     messagebox.showwarning('Warning', 'Employee has no schedule yet')
 
 
 def employee_weekday_not_allowed():
-    messagebox.showwarning('Warning', 'Employee is not scheduled to time in on ' + str(weekday))
+    pop_weekday_number = datetime.today().isoweekday()
+    pop_weekday = ""
+
+    if pop_weekday_number == 1:
+        pop_weekday = 'Monday'
+    elif pop_weekday_number == 2:
+        pop_weekday = 'Tuesday'
+    elif pop_weekday_number == 3:
+        pop_weekday = 'Wednesday'
+    elif pop_weekday_number == 4:
+        pop_weekday = 'Thursday'
+    elif pop_weekday_number == 5:
+        pop_weekday = 'Friday'
+    elif pop_weekday_number == 6:
+        pop_weekday = 'Saturday'
+    elif pop_weekday_number == 7:
+        pop_weekday = 'Sunday'
+    messagebox.showwarning('Warning', 'Employee is not scheduled to time in on ' + str(pop_weekday))
 
 
 def employee_inactive_message():
@@ -57,4 +75,13 @@ def employee_leave_message():
     messagebox.showinfo('Employee on a leave', 'Employee is on a leave today, attendance will not be recorded')
 
 
+def wrong_password_message():
+    messagebox.showwarning('Security Password', 'Wrong Password')
 
+
+def employee_inactive_message():
+    messagebox.showwarning('Employee Inactive', 'Employee inactive, attendance will not be recorded')
+
+
+def no_employee_select_message():
+    messagebox.showwarning('Select Employee', 'Select an Employee First');
