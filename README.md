@@ -9,7 +9,7 @@ https://github.com/JohnCunan/FionasFarmResortAdmin
 **Database**:
 Microsoft SQL Server Express (15.0)
 
-**Algorithm**:
+**Algorithms**:<br/>
 Haar Cascade for face detection
 
 Local Binary Pattern Histogram (LBPH) for face recognition and dataset training for AI
