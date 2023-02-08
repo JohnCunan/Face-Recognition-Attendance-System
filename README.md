@@ -9,6 +9,11 @@ https://github.com/JohnCunan/FionasFarmResortAdmin
 **Database**:
 Microsoft SQL Server Express (15.0)
 
+**Algorithm**:
+Haar Cascade for face detection
+
+Local Binary Pattern Histogram (LBPH) for face recognition and dataset training for AI
+
 **Packages**
 
 1.) Pillow (9.2.0)
