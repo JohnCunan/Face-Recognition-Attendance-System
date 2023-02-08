@@ -3,8 +3,10 @@
 # Attendance-Module
 Attendance Module for Payroll System (Works with Python 3.9)
 
+This is the attendance system of the Payroll System Fiona's Farm & Resort:
+https://github.com/JohnCunan/FionasFarmResortAdmin
 
-**Database**
+**Database**:
 Microsoft SQL Server Express (15.0)
 
 **Packages**
